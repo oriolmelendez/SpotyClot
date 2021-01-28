@@ -16,9 +16,9 @@
                     <img src="img/logo.png" id="logo">
                     <form method="POST">
                         <div id="loginForm">
-                            <input type="text" [(ngModel)]="usuari" name="email" id="nomUsr" placeholder="Nom d'usuari" required="required"><br>
-                            <input type="password" [(ngModel)]="password" name="password" id="pwdUsr" placeholder="password" required="required"><br>
-                            <button type="submit" id="BotoAccedir" (click)="validarLogin()">Accedir</button>
+                            <input type="text" name="email" id="nomUsr" placeholder="Nom d'usuari" #usuari required><br>
+                            <input type="password" name="password" id="pwdUsr" placeholder="password" #password required><br>
+                            <button type="submit" id="BotoAccedir" (click)="validarLogin(usuari.value, password.value)">Accedir</button>
                         </div>
                     </form>
                     <hr>

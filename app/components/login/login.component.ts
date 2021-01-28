@@ -15,14 +15,19 @@ export class LoginComponent implements OnInit {
   constructor(private http: HttpClient) { }
   //constructor() { }
 
-  validarLogin(): void{
-    //console.log(this.usuari);
-    //console.log(this.password);
+  validarLogin(usuari:string, password: string): void{
+    var xhr = new XMLHttpRequest(); 
+ 
+    /* xhr.onreadystatechange = function(){ 
+        if (this.readyState === 4) { 
+            document.getElementById("consulta").innerHTML =  this.response; 
+        } 
+    }  */
+    
+    let dades = usuari + ',' + password;
 
-    this.http.post('http://localhost:8888/login',{
-      usuari: this.usuari,
-      password: this.password
-    })
+    xhr.open("POST","http://localhost:8888/login",true);
+    xhr.send(dades);
   }
   
 
