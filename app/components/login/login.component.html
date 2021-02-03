@@ -1,31 +1,11 @@
-<!DOCTYPE html>
-<html lang="ca">
-
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/css" href="./login.component.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <script type="text/javascript" src=""></script>
-
-    </head>
-
-    <body>
-        <div id="box">
-            <div id="sideNav">
-                <div id="login">
-                    <img src="img/logo.png" id="logo">
-                    <form method="POST">
-                        <div id="loginForm">
-                            <input type="text" name="email" id="nomUsr" placeholder="Nom d'usuari" #usuari required><br>
-                            <input type="password" name="password" id="pwdUsr" placeholder="password" #password required><br>
-                            <button type="submit" id="BotoAccedir" (click)="validarLogin(usuari.value, password.value)">Accedir</button>
-                        </div>
-                    </form>
-                    <hr>
-                </div>
-            </div>
-            <input id="search" placeholder="Search">
+<div id="login">
+    <img src="img/logo.png" id="logo">
+    <form method="POST">
+        <div id="loginForm">
+            <input type="text" name="email" id="nomUsr" placeholder="Nom d'usuari" #usuari required><br>
+            <input type="password" name="password" id="pwdUsr" placeholder="password" #password required><br>
+            <button type="submit" id="BotoAccedir" (click)="validarLogin(usuari.value, password.value)">Accedir</button>
         </div>
-    </body>
-
-</html>
+    </form>
+    <hr>
+</div>
