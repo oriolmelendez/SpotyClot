@@ -27,3 +27,13 @@ button {
     width: 120px;
     margin-left: 90px;
 }
+
+#registre,
+#login {
+    color: white;
+}
+
+#opcions>input {
+    margin-left: 60px;
+    margin-bottom: 15px;
+}

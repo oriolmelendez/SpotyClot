@@ -6,6 +6,10 @@
             <input type="password" name="password" id="pwdUsr" placeholder="password" #password required><br>
             <button type="submit" id="BotoAccedir" (click)="validarLogin(usuari.value, password.value)">Accedir</button>
         </div>
+        <div id="opcions">
+            <input type="radio" name="opcio" id="login" checked><label for="opcio">Login</label>
+            <input type="radio" name="opcio" id="registre"><label for="opcio">Registre</label>
+        </div>
     </form>
     <hr>
 </div>
