@@ -5,11 +5,23 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './playlist.component.html',
   styleUrls: ['./playlist.component.css']
 })
-export class PlaylistComponent implements OnInit {
+export class PlaylistComponent {
 
-  constructor() { }
+  title:string;
+  playlists:Array<any>
 
-  ngOnInit(): void {
+  constructor() { 
+    this.title = "PLAYLIST";
+    this.playlists = [
+      {nom:'Preferits'},
+      {nom:'Punk'},
+      {nom: 'Rock alternatiu'}
+    ]
   }
+
+  crearPlaylist():void{
+
+  }
+
 
 }
