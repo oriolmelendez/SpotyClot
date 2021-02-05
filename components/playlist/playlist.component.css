@@ -1,0 +1,27 @@
+h3 {
+    color: white;
+    margin-left: 32%;
+}
+
+#playlists {
+    width: 300px;
+    color: white;
+}
+
+#playlists>p {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+#crearPlaylist {
+    width: 90%;
+    height: 40px;
+    margin-left: 13px;
+}
+
+#playlist {
+    width: 90%;
+    height: 40px;
+    margin-left: 13px;
+    margin-top: 3%;
+}

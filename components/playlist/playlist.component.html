@@ -1,0 +1,5 @@
+<h3>{{title}}</h3>
+<div id="playlists">
+    <button id="crearPlaylist" (click)="crearPlaylist()">Crear playlists</button>
+    <button id="playlist" *ngFor="let play of playlists">{{play.nom}}</button>
+</div>
