@@ -8,27 +8,25 @@ import { MatTableModule } from '@angular/material/table';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
-
-import { routing } from './app.routing';
+import { AppRoutingModule } from './app.routing';
 import { AppComponent } from './app.component';
-import { PrincipalComponent } from './components/principal/principal.component';
-import { PlaylistComponent } from './components/playlist/playlist.component';
 import { ControlComponent } from './components/control/control.component';
 import { TaulaComponent } from './components/taula/taula.component';
+import { IniciComponent } from './components/inici/inici.component';
+import { PreferitsComponent } from './components/preferits/preferits.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PrincipalComponent,
-    PlaylistComponent,
     ControlComponent,
-    TaulaComponent
+    TaulaComponent,
+    IniciComponent,
+    PreferitsComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     FormsModule,
-    routing,
     HttpClientModule,
     BrowserModule,
     BrowserAnimationsModule,
@@ -37,9 +35,10 @@ import { TaulaComponent } from './components/taula/taula.component';
     ReactiveFormsModule,
     MatInputModule,
     MatFormFieldModule,
-    MatTableModule
+    MatTableModule,
+    AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent, PrincipalComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
