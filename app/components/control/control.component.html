@@ -1,3 +1,5 @@
+<app-taula *ngIf="where == 'taula'"></app-taula>
+<app-preferits *ngIf="where == 'pref'"></app-preferits>
 <div id="controlAudio">
-    <audio src="" controls></audio>
+    <audio id=audio src="{{audio}}" controls></audio>
 </div>
