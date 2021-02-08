@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap');
+#content>h1 {
+    font-size: 60px;
+    font-family: 'Hind', sans-serif;
+    color: black;
+    padding-top: 10%;
+    padding-left: 39%;
+    margin-top: -730px;
+}
+
+body {
+    top: 0px;
+}
+
+img {
+    width: 500px;
+    margin-left: 650px;
+    margin-top: -40px;
+}

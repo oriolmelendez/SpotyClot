@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+h3 {
+    color: white;
+    margin-left: 38%;
+}
+
+#playlists {
+    width: 300px;
+    color: white;
+}
+
+#playlists>button:last-child {
+    margin-bottom: 270px;
+}
+
+#playlists>p {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+#crearPlaylist {
+    width: 90%;
+    height: 40px;
+    margin-left: 13px;
+}
+
+#boto {
+    width: 90%;
+    height: 40px;
+    margin-left: 13px;
+    margin-top: 3%;
+}
+
+#img>img {
+    width: 300px;
+}
+
+body {
+    margin: 0px;
+}
+
+#box {
+    width: 30%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#sideNav {
+    background-color: black;
+    width: 300px;
+}
+
+#content {
+    margin-left: 50px;
+}

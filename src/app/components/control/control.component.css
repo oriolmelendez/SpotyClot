@@ -1,0 +1,10 @@
+#controlAudio {
+    width: 70%;
+    height: 100px;
+    margin-left: 370px;
+}
+
+#controlAudio>audio {
+    width: 100%;
+    margin-top: 1%;
+}
